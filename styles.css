@@ -1,0 +1,215 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero, .hero2, .hero3, .hero4, .hero5, .hero6 {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-bottom: 40px;
+}
+
+.hero-top, .hero-top2, .hero3, .hero4, .hero5, .hero6  {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.hero h1, .hero2 h1, .hero3 h1, .hero4 h1, .hero5 h1, .hero6 h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p, .hero2 p, .hero3 p, .hero4 p, .hero5 p, .hero6 p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.hero a, .hero2 a, .hero3 a, .hero4 a, .hero5 a, .hero6 a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #667eea;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.hero a:hover, .hero2 a:hover, .hero3 a:hover, .hero4 a:hover, .hero5 a:hover, .hero6 a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Section */
+.section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Cards Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card h3 {
+  color: #667eea;
+  font-size: 20px;
+}
+
+/* Lists */
+.list-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.list-container ul {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul li {
+  position: relative;
+  padding-left: 28px;
+}
+
+ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+footer ol {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+}
+
+footer ol li {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1, .hero2 h1 {
+    font-size: 32px;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
